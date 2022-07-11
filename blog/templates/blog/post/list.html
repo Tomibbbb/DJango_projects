@@ -2,6 +2,8 @@
    {% block title %}Kemi's Blog{% endblock %}
    {% block content %}
      <h1>Kemi's Blog</h1>
+     {% include "pagination.html" with page=posts %}
+
      {% for post in posts %}
        <h2>
          <a href="{{ post.get_absolute_url }}">
