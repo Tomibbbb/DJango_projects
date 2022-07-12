@@ -1,5 +1,7 @@
 {% extends "blog/base.html" %}
    {% block title %}Kemi's Blog{% endblock %}
+   <p class="tags">Tags: {{ post.tags.all|join:", " }}</p>
+
    {% block content %}
      <h1>Kemi's Blog</h1>
      {% for post in posts %}
