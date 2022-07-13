@@ -4,6 +4,7 @@ from .models import Post,Comment
 from .forms import  CommentForm
 from django.core.paginator import Paginator, EmptyPage,\
                                      PageNotAnInteger
+from taggit.models import Tag                                     
 
 
 
